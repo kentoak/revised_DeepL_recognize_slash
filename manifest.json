@@ -1,0 +1,28 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 2,
+	"name": "DeepL翻訳",
+	"version" : "1.0.0",
+	"description": "本家「なぞり翻訳(英→和) for DeepL翻訳」の改良版です。本家は、スラッシュ以降を認識しない欠陥があったのでそこを改善しました。また、本家はDeepLを新規タブで開く使用でしたが、ポップアップウィンドウにしました。",
+	"background" : {
+		"scripts": ["deepl.js"]
+	},
+	"web_accessible_resources": [
+		"images/icon16.png",
+		"images/icon32.png",
+		"images/icon64.png",
+		"images/icon128.png"
+	],
+	"content_security_policy": "script-src 'self' ; object-src 'self'",
+	"permissions": [
+		"contextMenus"
+	],
+	"icons": {
+		"16" : "images/icon16.png",
+		"32" : "images/icon32.png",
+		"64" : "images/icon64.png",
+		"128" : "images/icon128.png"
+	},
+	"default_locale" : "ja"
+}
