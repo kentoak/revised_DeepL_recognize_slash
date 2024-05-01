@@ -1,8 +1,7 @@
 function jumpTextSearch() {
 	return function(info, tab) {
 		var str = info.selectionText;
-		var url = 'https://www.deepl.com/translator#en/ja/'+encodeURIComponent(str.replace(/[\/\\\|]/g,"\\$&"))+'';
-		//ここ田岡
+		var url = 'https://www.deepl.com/translator#auto/ja/'+encodeURIComponent(str.replace(/[\/\\\|]/g,"\\$&"))+'';
 		chrome.windows.create({
 			url: url,
 			type: 'popup',
